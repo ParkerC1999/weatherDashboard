@@ -1,0 +1,41 @@
+header {
+    background-color: lightseagreen;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.dashBoard {
+    margin: 5px;
+}
+
+.searchBtn {
+    background-color: mediumaquamarine;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+.green {
+    color: white;
+    background-color: green;
+}
+
+.yellow {
+    color: white;
+    background-color: yellow;
+}
+
+.orange {
+    color: white;
+    background-color: orange;
+}
+
+.red {
+    color: white;
+    background-color: red;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>
+        <h2>Weather Dashboard (Utah)</h2>
+    </header>
+
+    <div class="container dashBoard row">
+        <div class="col-3">
+            <h2>Search for City:</h2>
+            <input type="text" placeholder="Salt Lake City" name="search" class="w-100" id="input" />
+            <button type="button" id="search" onclick="searchFunc()" class="w-100 searchBtn">Search</button>
+            <div class="history" id="history">
+
+            </div>
+        </div>
+        <div class="col-9" id="results">
+            
+        </div>
+    </div>
+
+    <script src="./assests/js/script.js"></script>
+</body>
+</html>
