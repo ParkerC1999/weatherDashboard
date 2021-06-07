@@ -13,6 +13,7 @@ function searchFunc() {
         weather(lat, lon);
     });
     searchHistory.append(`<button class="searchButton row">${searchBox}</button>`);
+    storage();
     $(".searchButton").click(anotherSearch);
 }
 
@@ -61,27 +62,10 @@ function weather(lat, lon) {
     })
 }
 
-// User input
-// grab user input
-// use api call call with user
-// function api() {
-//     fetch ("https://api.openweathermap.org/data/2.5/onecall?lat=90&lon=-90&appid=024d79cc80517b52a0d0655a853e97e8")
-//     .then(function(response) {
-//         return response.json();
-//     })
-//     .then(function(data) {
-//         console.log(data);
-//     })
-// }
-// function latLong() {
-//     fetch ("http://api.openweathermap.org/geo/1.0/direct?q=Layton,UT,US&appid=024d79cc80517b52a0d0655a853e97e8")
-//     .then(function(response) {
-//         return response.json();
-//     })
-//     .then(function(data) {
-//         console.log(data);
-//     })
-// }
-// api();
-// latLong();
-// information from api call on page
+function storage() {
+    var recentSearch = $('.searchButton').html();
+    localStorage.setItem('searched', recentSearch);
+}
+
+//load
+$('#history').html(localStorage.getItem('searched'));
